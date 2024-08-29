@@ -12,7 +12,7 @@ const Signup = () => {
   const [password, setpassword] = useState("");
   const [loading, setLoading] = useState(false);
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = async (e: any) => {
     e.preventDefault();
 
     if (!fullName || !username || !password) {
@@ -33,7 +33,7 @@ const Signup = () => {
 
       // Use window.location.href to navigate
       window.location.href = "/login"; // Redirect to the dashboard upon successful registration
-    } catch (error) {
+    } catch (error: any) {
       alert(error.response?.data?.message || "An error occurred");
     } finally {
       setLoading(false);

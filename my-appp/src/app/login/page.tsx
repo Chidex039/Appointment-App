@@ -102,7 +102,7 @@ const Login = () => {
           </form>
 
           <div className="flex gap-3">
-            <p>Don't have an account?</p>
+            <p>Don&apos;t have an account?</p>
             <Link href="/register">Register</Link>
           </div>
         </div>
